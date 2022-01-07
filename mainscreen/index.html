@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container-fluid pt-5">
+      <div class="row">
+        <div class="col backbutton d-flex align-items-center ">
+          <i class="fas fa-long-arrow-alt-left text-white fa-2x " onclick="backToTheChapter()"></i>
+         <span style="margin-left: 10px; color: white; ">Back To Home</span>  
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row content">
+        <div class="col-3 d-flex justify-content-center align-items-center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMJm2b4MMa8pA44Zzzd1ZRGFb-M_-Ed2YnFg&usqp=CAU"
+            class="img-fluid img-thumbnail"
+          />
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+          <h1>summary</h1>
+          <div class="next-button d-flex justify-content-center align-items-center" onclick="goToVideo(this)">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-3 d-flex justify-content-center align-items-center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMJm2b4MMa8pA44Zzzd1ZRGFb-M_-Ed2YnFg&usqp=CAU"
+            class="img-fluid img-thumbnail"
+          />
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+          <h1>Descriptive Video</h1>
+          <div class="next-button d-flex justify-content-center align-items-center"  onclick="goToVideo(this)">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-3 d-flex justify-content-center align-items-center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMJm2b4MMa8pA44Zzzd1ZRGFb-M_-Ed2YnFg&usqp=CAU"
+            class="img-fluid img-thumbnail"
+          />
+        </div>
+        <div class="col-9 d-flex align-items-center justify-content-between">
+          <h1>Short Question</h1>
+          <div class="next-button d-flex justify-content-center align-items-center"  onclick="goToVideo(this)">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-3 d-flex justify-content-center align-items-center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMJm2b4MMa8pA44Zzzd1ZRGFb-M_-Ed2YnFg&usqp=CAU"
+            class="img-fluid img-thumbnail"
+          />
+        </div>
+        <div class="col-9 d-flex align-items-center justify-content-between">
+          <h1>Long Question</h1>
+          <div class="next-button d-flex justify-content-center align-items-center"  onclick="goToVideo(this)">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-3 d-flex justify-content-center align-items-center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMJm2b4MMa8pA44Zzzd1ZRGFb-M_-Ed2YnFg&usqp=CAU"
+            class="img-fluid img-thumbnail"
+          />
+        </div>
+        <div class="col-9 d-flex align-items-center justify-content-between">
+          <h1>Vocab</h1>
+          <div class="next-button d-flex justify-content-center align-items-center"  onclick="goToVideo(this)">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-3 d-flex justify-content-center align-items-center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMJm2b4MMa8pA44Zzzd1ZRGFb-M_-Ed2YnFg&usqp=CAU"
+            class="img-fluid img-thumbnail"
+          />
+        </div>
+        <div class="col-9 d-flex align-items-center justify-content-between">
+          <h1>Practice Sets</h1>
+          <div class="next-button d-flex justify-content-center align-items-center"  onclick="goToVideo(this)">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+     
+     
+        
+    </div>
+    <script>
+      function goToVideo(that) {
+        var getvalue = that.parentElement.children[0].innerHTML;
+        //console.dir(that.parentElement.children[0].innerHTML);
+
+        if(getvalue == "summary"){
+        window.location.replace(`chapterDetails.html`);
+        }
+        else if(getvalue == "Descriptive Video"){
+        window.location.replace(`chapterDetails.html`);
+        }
+        else if(getvalue == "Short Question"){
+        window.location.replace(`test.html`);
+        }
+        else if(getvalue == "Long Question"){
+        window.location.replace(`test.html`);
+        }
+        else if(getvalue == "Practice Sets"){
+        window.location.replace(`hello`);
+        }
+        else if(getvalue == "Vocab"){
+        window.location.replace(`hello`);
+        }
+
+        
+      }
+      function backToTheChapter() {
+        window.location.replace(`main.html`);
+      }
+    </script>
+  </body>
+</html>

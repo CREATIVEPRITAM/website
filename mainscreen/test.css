@@ -1,0 +1,37 @@
+
+.backbutton{
+    height: 8%;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+  }
+.question{
+    height: auto;
+    background-color: black;
+    color: white;
+
+}
+.ansswer{
+    height: 60vh;
+    -webkit-box-shadow: inset 0px 2px 50px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 2px 50px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 2px 50px 1px rgba(0, 0, 0, 0.75);
+}
+.content{
+    position: relative;
+}
+.splitbutton{
+    width: 40%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(37, 193, 255);
+}

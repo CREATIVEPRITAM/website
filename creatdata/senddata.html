@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        background-color: aqua;
+        height: 30px;
+        margin-bottom: 10px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section style="display: flex; flex-direction: column; width: 300px">
+      <input id="title" type="text" placeholder="title" />
+      <input id="author" type="text" placeholder="authour" />
+      <input id="description" type="text" placeholder="discription" />
+      <input id="chapterNo" type="text" placeholder="chapterNo" />
+      <input id="urlcoverimage" type="text" placeholder="urlcoverimage" />
+      <input id="readingTime" type="text" placeholder="readingTime" />
+
+      <button onclick="createdata()">craat data</button>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.7.1/firebase-app.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.7.1/firebase-firestore.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.7.1/firebase-auth.min.js"></script>
+    <script src="create.js">
+      
+    </script>
+  </body>
+</html>
